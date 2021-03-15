@@ -1,1 +1,5 @@
-<p>app component works</p>
+<li *ngFor="let movie of movies$ | async">
+  {{ movie.name }}
+</li>
+
+<button (click)="add('New Movie', 'steven')">Add a Movie</button>
